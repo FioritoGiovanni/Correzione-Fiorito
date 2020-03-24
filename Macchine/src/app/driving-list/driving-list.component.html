@@ -1,0 +1,9 @@
+<ul>
+<li *ngFor = "let m of listaM ">
+{{m.tipo}}  |  {{m.tariffa}}
+<button (click)="noleggiami(m)">Noleggia</button>
+</li>
+</ul>
+
+
+<app-rented [driving] ="selectedCar"></app-rented>
